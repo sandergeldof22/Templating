@@ -1,0 +1,73 @@
+<!DOCTYPE html>																																	<!-- sander geldof -->
+<html>
+<head>
+	<title>Lab Documentatie</title>
+</head>
+<body>
+
+			LANGUAGE REFERENCE
+
+
+	1: php tags zorgen voor het aan en afsluiten van php code. zonder deze afsluitingen weet de php scanner niet waar hij moet beginnen/eindigen en zal hij dus doorgaan. dit kan nare gevolgen hebben zoals whitespace etc
+
+	2:Een bolean uit zich als een truth value. ze kunnen of true, of false zijn. Boleans zijn standaard true op een paar uitzonderingen na zoals 0, null , "" 
+
+	een Integer is een set van nummers. dit kan gespecificeerd worden na decimalen, heximalen tot negatieven
+
+	Floating point numbers zijn de ingewikkelde nummers zoals 1.2e3 wat meerdere duizenden inhoudt. php kan deze ook lezen tot een bepaalde grootte
+
+	een string is een serieus van karakters (letters, tekens) tot een 256-character set. een string is gespecifeerd in een single, duo quote of een heredoc
+
+	een array in php is eigenlijk een geordende map. key true wordt gestored onder 1 en false onder 0. ze moeten ook een legitieme decimale integer hebben dus 7 en niet 07, 8 en geen 08. gebruik altijd "" binnen een string array index. alle bovengenoemde kunnen allemaal worden omgezet in een array
+
+
+	3: expressions, alles wat je typt is bijna een expression, comparison expressions zijn gebasseerd op TRUE en FALSE. met expressions in een variabele valt goed te rekenen.
+
+	4: elseif is een statement waarin meer gedaan kan worden dan true/false. met een if kun je bepaalde voorwaarden vragen. komen deze niet uit aka false dan gaat hij naar de volgende expressie. elseif ipv else. met elseif kan alles gedaan worden wat niet voldaan doet aan de if. als deze dan ook false zijn gaat hij naar else. 
+
+	foreach is een expressie die zich makkelijk over arrays en objects heen kan gaan. voor elk stukje code of variabele zal hij bepaalde statements en functies uitvoeren
+
+	break is een simpel stukje code. break zorgt ervoor dat expressies, foreach, elseif statements en loops worden gestopt.
+
+	continue is practisch de tegenstander van break. continue zorgt er juist voor dat stukken code weer verder gaan loopen. ideaal als er midden in je loop stil komt te staan of iets eruit wilt halen.
+
+	switch is een handig stukje code dat ervoor zorgt dat je bijv 2 dezelfde variabelen of expressions met verschillende values met elkaar kan vergelijken en eventueel een andere waarde kan executeren.
+
+	5 user defined function zijn eigenlijk gewoon functies gedefineerd door syntaxen. elke werkende php code past binnen deze functies, andere functies en zelfs classes alhoewel de namen van functions zich wel met normale tekens moeten voorkomen
+
+	informatie kan gegeven worden aan deze functies via arguments. arguments worden geavalueerd van links naar rechts en ze worden altijd gepasseerd met een waarde.
+
+	value en waarde worden terugggehaald via de "return". alles kan gereturnd worden arrays en objects bijvoorbeeld. alhoewel return er wel voor gezorgd dat de code zich elimineert en stopt.
+
+	er bestaat ook nog zoiets als variabele functies, ja echt waar why not. dat betekent dat een variabele naam. de php functie zoekt dan naar de functie met dezelfde naam en executeert deze. 
+
+									FUNCTION REFERENCE
+
+
+
+
+	Date_sunset geeft je de eventuele tijd op de dag waarop het zonnig is
+
+	cal_days_in_month geeft je de dagen in een maand van een gegeven jaar en kalender
+
+	chmod verandert de file mode
+
+	copy kopiert de file
+
+	delete, delete een file
+
+	dirname geeft je de oorsprongsplek van het bestand in je computer. de locatie
+
+	disk_free_space geeft aan hoeveel vrije ruimte je nog op je disc of file hebt
+
+	disk_total_space  geeft je de volledige hoeveelheid ruimte die op je disc of file staat
+
+	fopen opent een file of url
+
+	fclose sluit een file of url
+
+	filesize pakt de grootte van het bestand
+
+	de mail() functie zorgt ervoor dat je bepaalde submits en data door kan sturen naar je email. om dit te doen moet je in je php.ini bestand van php bepaalde wijzigingen doorvoeren zodat deze gebruik kan maken van een server om bepaalde data door te mailen
+</body>
+</html>
